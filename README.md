@@ -117,13 +117,16 @@ uvicorn backend.main:app --reload
 The backend will run at:
 
 http://127.0.0.1:8000
-6. Open the frontend
 
-Open:
+6. Open the application
+
+Make sure the FastAPI server is running at:
+
+http://127.0.0.1:8000
+
+Then open the frontend in Google Chrome:
 
 frontend/index.html
-
-in Google Chrome.
 
 Allow microphone access when prompted.
 
