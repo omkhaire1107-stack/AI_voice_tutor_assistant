@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Language Tutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>AI Voice Language Tutor</h1>
+        <p class="subtitle">
+            Speak a sentence and get instant language feedback.
+        </p>
+
+        <label for="language">Target Language</label>
+
+        <select id="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+        </select>
+
+        <button id="micButton">🎤 Start Speaking</button>
+
+        <div class="section">
+            <h2>You said</h2>
+            <p id="transcript">Your spoken sentence will appear here...</p>
+        </div>
+
+        <div class="section">
+            <h2>AI Feedback</h2>
+            <p id="feedback">AI feedback will appear here...</p>
+        </div>
+
+        <div class="section">
+            <h2>Corrected Sentence</h2>
+            <p id="corrected">The corrected sentence will appear here...</p>
+        </div>
+        <div class="section">
+            <h2>📊 Your Progress</h2>
+            <p>Correct Sessions: <span id="correctSessions">0</span></p>
+            <p>Practice Sessions: <span id="sessions">0</span></p>
+            <p>Grammar Mistakes: <span id="grammarMistakes">0</span></p>
+            <p>Vocabulary Issues: <span id="vocabularyIssues">0</span></p>
+            <p>Difficulty Level: <span id="difficulty">Beginner</span></p>
+        </div>
+        <button id="speakButton">🔊 Play Corrected Sentence</button>
+        <button id="resetButton">Reset Progress</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
